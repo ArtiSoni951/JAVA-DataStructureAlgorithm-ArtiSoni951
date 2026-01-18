@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class JavaLinearSearch {
     
     public static int linearSearch( int numbers[],int key){
@@ -13,7 +13,7 @@ public class JavaLinearSearch {
     }
     public static void main (String args[]){
 
-        int number[] = { 2,4,6,8,10,12,14,16};
+        int numbers[] = { 2,4,6,8,10,12,14,16};
         
         int key = 10;
         //linear search
@@ -27,6 +27,6 @@ public class JavaLinearSearch {
         // }
    
  
- System.out.println("key found at index: " + linearSearch(number, key));
+ System.out.println("key found at index: " + linearSearch(numbers, key));
     }
 }
