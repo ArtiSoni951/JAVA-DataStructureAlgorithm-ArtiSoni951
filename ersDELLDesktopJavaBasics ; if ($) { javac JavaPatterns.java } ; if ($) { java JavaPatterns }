@@ -1,0 +1,84 @@
+[33mcommit 43d774594a56dace9825aaf1feca367e291f6671[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Arti <artisoni9201010@gmail.com>
+Date:   Sun Jan 18 10:13:09 2026 +0530
+
+    add linear search implementation in Java
+
+[1mdiff --git a/JavaLinearSearch.java b/JavaLinearSearch.java[m
+[1mindex 92b5923..f0b5798 100644[m
+[1m--- a/JavaLinearSearch.java[m
+[1m+++ b/JavaLinearSearch.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-import java.util.*;[m
+[32m+[m
+ public class JavaLinearSearch {[m
+     [m
+     public static int linearSearch( int numbers[],int key){[m
+[36m@@ -13,7 +13,7 @@[m [mpublic class JavaLinearSearch {[m
+     }[m
+     public static void main (String args[]){[m
+ [m
+[31m-        int number[] = { 2,4,6,8,10,12,14,16};[m
+[32m+[m[32m        int numbers[] = { 2,4,6,8,10,12,14,16};[m
+         [m
+         int key = 10;[m
+         //linear search[m
+[36m@@ -27,6 +27,6 @@[m [mpublic class JavaLinearSearch {[m
+         // }[m
+    [m
+  [m
+[31m- System.out.println("key found at index: " + linearSearch(number, key));[m
+[32m+[m[32m System.out.println("key found at index: " + linearSearch(numbers, key));[m
+     }[m
+ }[m
+[1mdiff --git a/JavaLinearSearchSecond.java b/JavaLinearSearchSecond.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..36c2513[m
+[1m--- /dev/null[m
+[1m+++ b/JavaLinearSearchSecond.java[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32mpublic class JavaLinearSearchSecond {[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    public static boolean linearSearch( String words[],String key){[m
+[32m+[m[32m        for(int i=0 ; i< words.length ; i++){[m
+[32m+[m[32m            if(words[i].equals(key)){[m
+[32m+[m[32m                System.out.println("Key is found at index: " + i);[m
+[32m+[m[32m                return true;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        System.out.println("Key not found");[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m        String[] words = {"apple", "banana", "cherry", "date", "fig", "grape"};[m
+[32m+[m[32m        String key = "cherry";[m
+[32m+[m[32m        boolean result = linearSearch(words, key);[m
+[32m+[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/JavaLinearSearchThird.java b/JavaLinearSearchThird.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..379fc97[m
+[1m--- /dev/null[m
+[1m+++ b/JavaLinearSearchThird.java[m
+[36m@@ -0,0 +1,19 @@[m
+[32m+[m[32mpublic class JavaLinearSearchThird {[m
+[32m+[m[32m    public static boolean search(String name, char target){[m
+[32m+[m[32m       if (name.length() == 0){[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m       }[m[41m [m
+[32m+[m
+[32m+[m[32m       for( int i=0 ; i< name.length() ; i++){[m
+[32m+[m[32m            if( target == name.charAt(i)){[m
+[32m+[m[32m                return true;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    public static void main(String[] args){[m
+[32m+[m[32m        String name = "kunal";[m
+[32m+[m[32m        char target = 'u';[m
+[32m+[m[32m        System.out.println(search(name, target));[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m

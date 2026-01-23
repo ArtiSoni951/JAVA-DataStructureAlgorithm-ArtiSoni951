@@ -15,5 +15,7 @@ public class JavaLinearSearchThird {
         String name = "kunal";
         char target = 'u';
         System.out.println(search(name, target));
+
+        
     }
 }
